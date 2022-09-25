@@ -1,0 +1,59 @@
+<div class="container m-5 p-5 border border-5 bg-dark bg-opacity-10">
+  <h2 class="text-center">FORMULARIO</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="">Nit</label>
+        <input type="number" class="form-control" id="num1" [(ngModel)]="nit" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="">Nombre</label>
+        <input type="text" class="form-control" id="num2" [(ngModel)]="nombre" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="">Telefono</label>
+          <input type="number" class="form-control" id="num1" [(ngModel)]="tel" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="">Direccion</label>
+          <input type="text" class="form-control" id="num2" [(ngModel)]="direccion" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="email" class="form-control" id="num2" [(ngModel)]="mail" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="">Nombre del producto</label>
+            <input type="number" class="form-control" id="num1" [(ngModel)]="producto" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="">Precio Unitario</label>
+            <input type="text" class="form-control" id="num2" [(ngModel)]="precio" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="">cantidad</label>
+            <input type="email" class="form-control" id="num2" [(ngModel)]="cantidad" />
+          </div>
+        </div>
+    <app-resultado [result]="result"></app-resultado>
+    <!-- contenedor para los botones -->
+    <div class="col-0 col-md-3"></div>
+    <div class="col-6">    
+  </div>
+</div>
