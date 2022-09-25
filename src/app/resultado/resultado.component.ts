@@ -8,6 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ResultadoComponent implements OnInit {
   constructor() {}
 
-  @Input() result: number = 0;
+  @Input() result: any = {
+    name: 'string',
+    NIT: 0,
+    address: 'string',
+    email: 'string',
+    date: 'string',
+    phone: 0,
+  };
   ngOnInit(): void {}
 }

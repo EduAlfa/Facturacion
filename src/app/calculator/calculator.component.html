@@ -3,59 +3,62 @@
   <div class="row">
     <div class="col-md-4">
       <div class="form-group">
-        <label for="">Nit</label>
-        <input type="number" class="form-control" id="num1" [(ngModel)]="nit" />
+        <label for="">NIT</label>
+        <input type="number" class="form-control" id="" [(ngModel)]="nit" />
       </div>
     </div>
     <div class="col-md-4">
       <div class="form-group">
         <label for="">Nombre</label>
-        <input type="text" class="form-control" id="num2" [(ngModel)]="nombre" />
+        <input type="text" class="form-control" id="" [(ngModel)]="nombre" />
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
         <div class="form-group">
           <label for="">Telefono</label>
-          <input type="number" class="form-control" id="num1" [(ngModel)]="tel" />
+          <input type="number" class="form-control" id="" [(ngModel)]="tel" />
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="">Direccion</label>
-          <input type="text" class="form-control" id="num2" [(ngModel)]="direccion" />
+          <input type="text" class="form-control" id="" [(ngModel)]="direccion" />
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="">Email</label>
-          <input type="email" class="form-control" id="num2" [(ngModel)]="mail" />
+          <input type="email" class="form-control" id="" [(ngModel)]="mail" />
         </div>
-      </div>
-
-      <h2>Productos</h2>
+      </div><br><br>
+      <h2 class="text-center">Productos</h2><br>
       <div class="row">
         <div class="col-md-4">
           <div class="form-group">
             <label for="">Nombre del producto</label>
-            <input type="number" class="form-control" id="num1" [(ngModel)]="producto" />
+            <input type="number" class="form-control" id="" [(ngModel)]="producto" />
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
             <label for="">Precio Unitario</label>
-            <input type="text" class="form-control" id="num2" [(ngModel)]="precio" />
+            <input type="text" class="form-control" id="" [(ngModel)]="precio" />
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
             <label for="">cantidad</label>
-            <input type="email" class="form-control" id="num2" [(ngModel)]="cantidad" />
+            <input type="email" class="form-control" id="" [(ngModel)]="cantidad" />
           </div>
         </div>
     <app-resultado [result]="result"></app-resultado>
     <!-- contenedor para los botones -->
     <div class="col-0 col-md-3"></div>
-    <div class="col-6">    
+    <div class="col-6">
+      <div class="form-group d-flex justify-content-between p-5">
+        &nbsp;
+       <button class="btn btn-info" (click)="calcular('m')">Generar</button>
+     </div>    
   </div>
 </div>

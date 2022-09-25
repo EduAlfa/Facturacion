@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Este es un texto de prueba';
-  result: number = 0;
+  result: any = {};
   getEvent(e: any) {
     this.result = e;
   }
